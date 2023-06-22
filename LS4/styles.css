@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+.wapper{
+    width: 60%;
+    height: 950px;
+    margin: 0 auto;
+    border: 1px solid #3f3e3e;
+}
+.card{
+    width: 50%;
+    height: 33%;
+    background-color: #FFD38A;
+    border: 1px solid #3f3e3e;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+}
+.card .card_ava{
+    width: 50%;
+    height: 100%;
+    border: 1px solid #3f3e3e;
+    border-radius: 16px;
+    background-color: #E2E2E2;
+    
+}
+.card_ava .card_img{
+    width: 100%;
+    height: 70%;
+}
+.card .card_ava img{
+    width: 80%;
+    height: auto;
+    margin: 15px 0px 0 30px;
+}
+.card .icon_actions{
+    width: 100%;
+    height: 30%;
+    padding-left: 28px;
+}
+.card .icon_actions i{
+    width: 35px;
+    height: 35px;
+    font-size: 27px; 
+    color: #fff;
+    padding: 4px 4px;
+    background-color: black;
+    border-radius: 50%;
+    margin:  35px 10px 10px 0px;
+}
+.card .card_infor{
+    width: 50%;
+    height: 100%;
+}
+.text{
+    width: 100%;
+    height: 70%;
+    margin: 10px 0px 0px 10px;
+    font-weight: 400;
+}
+.user_address{
+    display: flex;
+}
+.user_address i{
+    margin-right: 10px;
+    margin-top: 3px;
+}
