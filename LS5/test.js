@@ -97,6 +97,11 @@
 // console.log(number(2,8));
 
 
+
+
+
+
+
 //Example
 //1.In ra dãy số từ 1 đến 500.
 // for (let i=1; i<=500; i++){
@@ -229,34 +234,32 @@
 // Người dùng nhập vào 1 số answer. Nếu answer bằng correct → in ra “Đoán đúng”.
 // Ngược lại → in ra “Đoán sai” và yêu cầu nhập lại answer.
 // Nếu nhập sai answer quá 5 lần → in ra “Bạn đã thua cuộc”.
-function game(n){
-    correct = Math.floor(Math.random() * 20);
-    let i= 5;
-    console.log(correct);
-        
-        while(i<= 5){
-            if(i <=5){
-                if(correct === n){
-                    i--;
-                    return 'Đoán đúng';
-                }else if(correct !== n){
-                    i--;
-                    return 'Đoán sai';
-                }
-            }else if(i == 0){
-                i = 5;
-                if(correct === n){
-                    i--;
-                    return 'Đoán đúng';
-                }else if(correct !== n){
-                    i--;
-                    return 'Bạn đã thua cuộc';   
+// function game(n){
+//     let i= 5;
+//         if(i <=5){
+//             correct = Math.floor(Math.random() * 20);
+//                 console.log(correct);      
+//                 if(correct === n){
+//                     i--;
+//                     return 'Đoán đúng';
+//                 }else if(correct !== n){
+//                     i--;
+//                     return 'Đoán sai';
+//                 }
+//             }else if(i == 0){
+//                 correct = Math.floor(Math.random() * 20);
+//                 console.log(correct);
+//                 if(correct === n){
+//                     i--;
+//                     return 'Đoán đúng';
+//                 }else if(correct !== n){
+//                     i--;
+//                     return 'Bạn đã thua cuộc';   
                     
-                }         
-            }
-        }
-}                     
-console.log(game(14));                         
+//                 }         
+//             }
+// }                     
+// console.log(game(14));                              
 // 13. Nhập vào số n (2 <= n <= 10). Hãy in ra bảng cửu chương của số n.
 // function bang_cuu_chuong(n){
 //     if(2<=n && n<=10){

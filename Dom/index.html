@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <ul id="favorite-list">
+        <li class="favorite-list-item">A</li>
+        <li class="favorite-list-item">G</li>
+        <li class="favorite-list-item">C</li>
+        <li class="favorite-list-item">F</li>
+        <li class="favorite-list-item">C</li>
+    </ul> -->
+
+    <div id="bai_1">
+        <h1>Bài 1: Check email </h1>
+        <input type="email" id="my-email">
+        <button type="submit" id="btn" onclick="check()">Button</button>
+        <h1 id="result">Kết quả : </h1>
+    </div>
+    <div id="bai_2">
+        <h1>Bài 2: Toan </h1>
+        <input type="number" class="ipt" id="number-a"><br>
+        <input type="number" class="ipt" id="number-b"><br>
+        <button type="submit" class="btn" onclick="sumNumber()">Sum</button>
+        <button type="submit" class="btn" onclick="subNumber()">Sub</button>
+        <h1 id="result_2">Kết quả : </h1>
+    </div>
+    <div id="bai_3">
+        <h1>Bài 3: Img </h1>
+        <img id="img_size" src="https://taimienphi.vn/tmp/cf/aut/hinh-anh-cute-dep-de-thuong-nhat-1.jpg" alt="" style="height: 100px; width: 100px;"><br>
+        <button type="submit" class="btn" onclick="upSize()">+</button>
+        <button type="submit" class="btn" onclick="downSize()">-</button>
+    </div>
+
+    <div id="bai_4">
+        <div id="left">
+            <h1>Bài 4: </h1>
+            <label for="">URL</label><br>
+            <input type="text" id="url" onchange="" class="ipt_4" placeholder="Nhập URL"><br>
+            <label for="">Chiều rộng</label><br>
+            <input type="number" id="w" onchange="" class="ipt_4" placeholder="Nhập chiều rộng"><br>
+            <label for="">Chiều cao</label><br>
+            <input type="number" id="h" onchange="" class="ipt_4" placeholder="Nhập chiều cao"><br>
+            <label for="">Bo góc</label><br>
+            <input type="number" id="radius" onchange="" class="ipt_4" placeholder="Nhập bo góc"><br>
+            <label for="">Alt</label><br>
+            <input type="text" id="al" onchange="" class="ipt_4" placeholder="Nhập Alt"><br>
+        </div>
+        <div id="right">
+            <img id="img_4" src="https://taimienphi.vn/tmp/cf/aut/hinh-anh-cute-dep-de-thuong-nhat-1.jpg" alt="" style="height: 100px; width: 100px;"><br>
+        </div>
+    </div>
+
+    <div id="bai_5">
+        <h1>Bài 5</h1>
+        <input type="text" name="" id="ipt_job" placeholder="Nhập nội dung công việc mới"><br>
+        <button type="submit" id="btn_job" onclick="">Tạo công việc mới</button>
+        <h2>Danh sách công việc cần làm : </h2>
+        <ul id="list_job">
+
+        </ul>
+    </div>
+
+    <div id="bai_6">
+        <table id="user">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Adress</th>
+                <th></th>
+            </tr>
+            <tr class="row">
+                <td>1</td>
+                <td>Name 1</td>
+                <td>Adress 1</td>
+                <td><button type="submit" class="del">Delete</button></td>
+            </tr>
+            <tr class="row">
+                <td>2</td>
+                <td>Name 2</td>
+                <td>Adress 2</td>
+                <td><button type="submit" class="del" >Delete</button></td>
+            </tr>
+            <tr class="row" >
+                <td>3</td>
+                <td>Name 3</td>
+                <td>Adress 3</td>
+                <td><button type="submit" class="del" >Delete</button></td>
+            </tr>
+            <tr class="row">
+                <td>4</td>
+                <td>Name 4</td>
+                <td>Adress 4</td>
+                <td><button type="submit" class="del" >Delete</button></td>
+            </tr>
+        </table>
+    </div>
+     
+    <script src="main.js">
+    </script>
+</body>
+</html>
