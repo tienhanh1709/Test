@@ -148,17 +148,63 @@ let del_select = document.getElementsByClassName('del');
 
 for (let i = 0; i < del_select.length; i++){
     del_select[i].onclick = () => {
-        //  this.value = 'd';
-        // del_select[i].value = 'f';
-        // if(del_select[i].value === 'f'){
-        //     let el = del_select[i].parentElement.parentElement;
-        //     // el.remove(el);
-        // }
-        // del_select[i].remove();
-        del_select[i].parentNode.removeChild(del_select[i])
+        del_select[i].parentElement.parentElement.remove();
+        let new_btn = document.getElementsByClassName('del');
+        for (let new_select of new_btn) {
+            new_select.onclick = () =>{
+                new_select.parentElement.parentElement.remove();
+            }
+        }
 
     };
 }
 
 
+
+
+////////////////////////////////////////////////////////////////////
+
+let btn_register = document.getElementById('btn_7');
+let ipt_value = document.getElementsByClassName('ipt_7');
+
+
+btn_register.onclick = () => {
+    for (let i = 0; i < ipt_value.length; i++) {
+        if (i = 0){
+            ipt_value[0].value == '';
+            alert('Thông tin có * là bắt buộc');
+            break;
+        }        
+        if(i = 4){
+            if (ipt_value[4].value == ''){
+                alert('Thông tin có * là bắt buộc');
+                break;
+            }else{
+                let email_check = ipt_value[4].value;
+                const expressions = /^((?:[A-Za-z0-9!#$%&'*+\-\/=?^_`{|}~]|(?<=^|\.)"|"(?=$|\.|@)|(?<=".*)[ .](?=.*")|(?<!\.)\.){1,64})(@)((?:[A-Za-z0-9.\-])*(?:[A-Za-z0-9])\.(?:[A-Za-z0-9]){2,})$/i;
+                let rew = expressions.test(String(email_check).toLowerCase());
+                if (rew === false){
+                    alert('Email không đúng định dạng');
+                    break;
+                }
+            }
+        }
+        if(i = 5){
+            if (ipt_value[5].value == ''){
+                alert('Thông tin có * là bắt buộc');
+                break;
+            }else{
+                let email_pass = String(ipt_value[5].value);
+                if(email_pass.length <=5){
+                    alert('Mật khẩu tối thiểu 6 ký tự');
+                    break;
+                }
+            }
+        }
+
+        alert('Đăng ký thành công');
+        break; 
+        
+    }
+};
 

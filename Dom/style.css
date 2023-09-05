@@ -100,3 +100,35 @@ body{
     border: 1px solid #5c5a5a;
     text-align: center;
 }
+#bai_7{
+    width: 30%;
+    height: 350px;
+    border: 1px solid #ccc;
+    margin: 30px;
+    padding: 10px 0 0 15px;
+}
+.lb_7{
+    font-size: larger;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.ipt_7{
+    width: 250px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+select{
+    width: 70px !important;
+    font-size: large;
+    height: 30px !important;
+    margin-bottom: 10px;
+}
+#btn_7{
+    font-size: larger;
+    width: 100px;
+    height: 40px;
+}
+span{
+    color: red;
+}

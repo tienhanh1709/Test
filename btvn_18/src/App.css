@@ -1,0 +1,260 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#wapper{
+  width: 799px;
+  min-height: 1200px;
+  margin: 50px auto;
+  border-radius: 12px;
+}
+#header{
+  background-color: #897BDA;
+  width: 100%;
+  height: 15%;
+  border-radius: 12px;
+  text-align: center;
+}
+#header .header_btn{
+  width: 227px;
+  height: 44px;
+  border-radius: 12px;
+  margin: 40px 0;
+  background-color: #862796;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 1px 4px 10px #000000;
+  font-size: large;
+  font-weight: 600;
+}
+#content{
+  width: 100%;
+  min-height: 850px;
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+#filter{
+  width: 90%;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+#text_filter{
+  color: #FFFFFF;
+  font-size: large;
+  margin: auto 0px;
+}
+#select_zone{
+  margin-top: 15px;
+}
+#years_ago{
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+}
+#chart_zone{
+  width: 90%;
+  height: 200px;
+  background-color: #E1CAE4;
+  border-radius: 12px;
+  display: flex;
+  margin: 0 auto;
+}
+.month{
+  width: calc(100%/12);
+  height: 100%;
+
+  text-align: center;
+}
+.colum{
+  width: 40%;
+  height: 80%;
+  border: 1px solid #000000;
+  margin: 8px auto;
+  border-radius: 50px;
+  background-color: #BAA5ED;
+  position: relative;
+}
+.val{
+  width: 100%;
+  height: 50%;
+  background-color: #3D15A9;
+  border-radius: 0 0 50px 50px;
+  position: absolute;
+  bottom: 0px;
+}
+.mont_text{
+  font-size: large;
+  color: #000000;
+  font-weight: 600;
+}
+#expen{
+  width: 90%;
+  min-height: 500px;
+  margin: 30px auto;
+}
+.work{
+  width: 100%;
+  height: 135px;
+  background-color: #575757;
+  border-radius: 12px;
+  display: flex;
+  color: #FFFFFF;
+  margin: 15px 0;
+}
+.work_left{
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+.work_right{
+  width: 30%;
+  height: 100%;
+}
+.time{
+  width: 115px;
+  height: 115px;
+  background-color: #1A1A1A;
+  text-align: center;
+  margin: 10px;
+  border-radius: 12px;
+  border: 1px solid #FFFFFF;
+}
+.work_name{
+  margin: auto 5px;
+}
+.price{
+  width: 30%;
+  height: 48px;
+  background-color: #862796;
+  float: right;
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+  text-align: center;
+  margin: 40px 10px 0px 0px;
+}
+.price h2{
+  margin-top: 10px;
+}
+.mm{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 4px 0;
+}
+.yyyy{
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.dd{
+  font-size: 22px;
+}
+
+
+
+
+#add_expen{
+  width: 100%;
+  height: 300px;
+  background-color: #897BDA;
+  border-radius: 12px;
+  padding-top: 10px;
+}
+#form_add{
+  width: 90%;
+  height: 70%;
+  margin: 5px auto;
+}
+.form_row{
+  width: 100%;
+  height: calc(100%/3);
+  display: flex;
+  margin-top: 10px;
+}
+.label_colunm{
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  width: 30%;
+  height: calc(100%/5);
+  display: block;
+  margin-top: 10px;
+}
+.ipt_colunm{
+  width: 70%;
+  height: 40px;
+  padding-left: 8px;
+  border-radius: 12px;
+  border: none;
+}
+.form_btn{
+  float: right;
+}
+#btn_add{
+  width: 70px;
+  height: 40px;
+  background-color: #862796;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  margin-right: 10px ;
+}
+#btn_cancel{
+  width: 100px;
+  height: 40px;
+  background-color: #D0D0D0;
+  color: #6A6A6A;
+  font-weight: bolder;
+  border: 1px solid #862796;
+  border-radius: 12px;
+}
+
